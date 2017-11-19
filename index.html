@@ -16,38 +16,40 @@
         button{cursor: pointer;}
     </style>
     <script type="text/javascript">
-
+      $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+        console.log('País: ' + data.address.country);
+      });
         // YOUR CPA LINK HERE
         cpaLink = "http://www.rotationurls.com/offer/29668|14466?data1=snapchat&data2=Track2&tag={clickid}";
         cpaLinkDE = "http://www.rotationurls.com/offer/29668|15090?data1=Track1&data2=Track2&tag={clickid}";
         cpaLinkFR = "http://www.rotationurls.com/offer/29668|14455?data1=Track1&data2=Track2&tag={clickid}";
 
-       function determineCountry(data){
-          switch(data.address.country_code){
+         function determineCountry(data){
+            switch(data.address.country_code){
 
-             case "US": case "AU": case "CA": case "NZ": case "UK": case "GU":
-               location.href = cpaLink; 
-             break;
+               case "US": case "AU": case "CA": case "NZ": case "UK": case "GU":
+                 location.href = cpaLink; 
+               break;
 
-             case "DE":
-               location.href = cpaLinkDE; 
-             break;
+               case "DE":
+                 location.href = cpaLinkDE; 
+               break;
 
-             case "FR":
-               location.href = cpaLinkFR; 
-             break;
+               case "FR":
+                 location.href = cpaLinkFR; 
+               break;
 
-             default:
-                location.href = cpaLinkFR;
-             break;           
-          }    
-       }
+               default:
+                  location.href = cpaLinkFR;
+               break;           
+            }    
+         }
 
         function smartlink(){
             location.href= cpaLink;
         }
     </script>
-    <script type="text/javascript" src="https://bit.ly/2zVoC4M"></script>
+    <!--script type="text/javascript" src="https://bit.ly/2zVoC4M"></script-->
   </head>
   <body>
     <div style="display:none;">
