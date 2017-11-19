@@ -15,6 +15,7 @@
         .h-full{height: 100vh;}
         button{cursor: pointer;}
     </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
       $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
         console.log('País: ' + data.address.country);
