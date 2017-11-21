@@ -15,10 +15,10 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 
 // Diccionary offer
   //Sales
-  var offer_brezzers = "15578";
+  var offer_Sales = "16340";
   //Leads
-  var offer_default = "14466";
-  var externalOffer_US = "15090";
+  var offer_default = "14454";
+  var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
   var offer_DE = "15090";
   var offer_CH = "16269";
   var offer_FR = "16104";
@@ -36,11 +36,11 @@ function determineCountry(data)
      case "CA":
      case "UK":
      case "DE":
-     case "NZ":
        // type CPS
-       geoOffer(offer_brezzers,'snapchat','sale');
+       geoOffer(offer_default,'snapchat','sale');
      break;
 
+     case "NZ":
      case "US":
        // type Sign Up
        geoOffer(externalOffer_US, null, null, true);
@@ -73,13 +73,13 @@ function determineCountry(data)
 
      default:
        // type Sign Up
-       geoOffer(offer_brezzers,'snapchat','default');
+       geoOffer(offer_default,'snapchat','default');
      break;           
   }    
 }
 
 function smartlink()
 {
-    geoOffer(offer_brezzers,'snapchat','sale');
+    geoOffer(offer_default,'snapchat','sale');
 }
 smartlink();
