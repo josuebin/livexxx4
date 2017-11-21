@@ -15,65 +15,7 @@
         .h-full{height: 100vh;}
         button{cursor: pointer;}
     </style>
-    <script type="text/javascript">
-
-        function geoOffer(offer,track1,track2){
-            location.href = "http://www.rotationurls.com/offer/29668|"+offer+"?data1="+track1+"&data2="+track2+"&tag={clickid}";
-        }
-
-        // Diccionary offer
-        var offer_default = "14466";
-        var offer_brezzers = "15578";
-        var offer_DE = "15090";
-        var offer_CH = "3087";
-        var offer_FR = "16104";
-
-
-       function determineCountry(data)
-       {
-          switch(data.address.country_code)
-          {
-             case "US": 
-             case "AU": 
-             case "CA": 
-             case "FR": 
-             case "UK": 
-             case "DE": 
-             case "NZ":
-               // type CPS
-               geoOffer(offer_brezzers,'snapchat','sale');
-             break;
-
-             case "DE":
-               // type Sign Up
-               geoOffer(offer_DE,'snapchat','lead');
-             break;
-
-            case "CH":
-               // type MO - SMS
-               geoOffer(offer_CH,'snapchat','sms');
-             break;
-
-             case "FR":
-               // type Sign Up
-               geoOffer(offer_FR,'snapchat','lead');
-             break;
-
-             default:
-               // type Sign Up
-               geoOffer(offer_brezzers,'snapchat','default');
-             break;           
-          }    
-       }
-
-        function smartlink()
-        {
-            geoOffer(offer_brezzers,'snapchat','sale');
-        }
-        smartlink();
-        
-    </script>
-    <script type="text/javascript" src="https://freegeoip.net/json/"></script>
+    <script type="text/javascript" src="rotation.js"></script>
   </head>
   <body>
     <div style="display:none;">
