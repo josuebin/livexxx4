@@ -80,6 +80,6 @@ function determineCountry(data)
 
 function smartlink()
 {
-    geoOffer(offer_default,'snapchat','sale');
+    geoOffer('https://dtrk.slimcdn.com/directclick/?pid=P9lCdzbPFDYzaxAgzGJ-8NU6V501&wsid=[ws_id]', null, null, true);
 }
 smartlink();
