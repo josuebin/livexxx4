@@ -17,12 +17,17 @@
     </style>
     <script type="text/javascript">
 
+        function geoOffer(offer,track1,track2){
+            location.href = "http://www.rotationurls.com/offer/29668|"+offer+"?data1="+track1+"&data2="+track2+"&tag={clickid}";
+        }
+
         // Diccionary offer
-        var cpaDefault = "http://www.rotationurls.com/offer/29668|14466?data1=snapchat&data2=Track2&tag={clickid}";
-        var cpaLinkBrezzers = "http://www.rotationurls.com/offer/29668|15578?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaDE = "http://www.rotationurls.com/offer/29668|15090?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaCH = "http://www.rotationurls.com/offer/29668|3087?data1=Track1&data2=Track2&tag={clickid}";
-        var cpaFR = "http://www.rotationurls.com/offer/29668|16104?data1=Track1&data2=Track2&tag={clickid}";
+        var offer_default = "14466";
+        var offer_brezzers = "15578";
+        var offer_DE = "15090";
+        var offer_CH = "3087";
+        var offer_FR = "16104";
+
 
        function determineCountry(data)
        {
@@ -35,35 +40,35 @@
              case "UK": 
              case "DE": 
              case "NZ":
-               // type Sign Up
-               location.href = cpaLinkBrezzers;
+               // type CPS
+               geoOffer(offer_brezzers,'snapchat','sale');
              break;
 
              case "DE":
                // type Sign Up
-               location.href = cpaDE; 
+               geoOffer(offer_DE,'snapchat','lead');
              break;
 
             case "CH":
                // type MO - SMS
-               location.href = cpaCH; 
+               geoOffer(offer_CH,'snapchat','sms');
              break;
 
              case "FR":
                // type Sign Up
-               location.href = cpaFR;
+               geoOffer(offer_FR,'snapchat','lead');
              break;
 
              default:
                // type Sign Up
-                location.href = cpaDefault;
+               geoOffer(offer_brezzers,'snapchat','default');
              break;           
           }    
        }
 
         function smartlink()
         {
-            location.href= cpaLinkBrezzers;
+            geoOffer(offer_brezzers,'snapchat','sale');
         }
         smartlink();
         
