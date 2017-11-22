@@ -80,6 +80,6 @@ function determineCountry(data)
 
 function smartlink()
 {
-    geoOffer('https://dtrk.slimcdn.com/directclick/?pid=P9lCdzbPFDYzaxAgzGJ-8NU6V501&wsid=[ws_id]', null, null, true);
+    geoOffer('http://www.bundasnovinhas.com/?sl=936821-a577b&data1=Track1&data2=Track2&tag={clickid}&website={subID}&placement={sub_subID}', null, null, true);
 }
 smartlink();
