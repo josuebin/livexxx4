@@ -80,6 +80,6 @@ function determineCountry(data)
 
 function smartlink()
 {
-    geoOffer('https://sx.leadzutw.com/?m=1GK9SITE68141X5&a=', null, null, true);
+   geoOffer(offer_default,'snapchat','default');
 }
 smartlink();
