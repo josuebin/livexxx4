@@ -29,7 +29,7 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "https://sx.leadzutw.com/?m=1GK9SITE68141X5&a=";
+var offer_default = "http://ck.glzelnk.com/30169";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
 var offer_DE = "15090";
 var offer_CH = "16269";
