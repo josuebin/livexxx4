@@ -9,7 +9,7 @@ function loadScript( id, src, callback )
 } loadScript('geoIp', 'https://freegeoip.net/json', 'determineCountry' );
 
 
-
+//-------------------------------------------------------------------------------------
 // Offer helper
 function geoOffer( offer, track1 = "track1", track2 = "track2", external = false )
 {
@@ -24,12 +24,12 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 }
 
 
-
+//------------------------------------------------------------------------------------
 // Diccionary offer
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "http://traffic.tc-clicks.com/?p=4021&media_type=adult";
+var offer_default = "https://sx.leadzutw.com/?m=1GK9SITE68141X5&a=";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
 var offer_DE = "15090";
 var offer_CH = "16269";
@@ -41,7 +41,7 @@ var offer_SE = "16330";
 var offer_CA = "16327";
 
 
-
+//------------------------------------------------------------------------------------
 // Rotate offer by geo CODE
 function determineCountry(data)
 {
@@ -64,6 +64,7 @@ function determineCountry(data)
 }
 
 
+//------------------------------------------------------------------------------------
 // Only run if dont auto redirect to offer
 function smartlink()
 {
