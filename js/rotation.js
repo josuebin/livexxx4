@@ -29,7 +29,7 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "14454";
+var offer_default = "http://traffic.tc-clicks.com/?p=4021&media_type=adult";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
 var offer_DE = "15090";
 var offer_CH = "16269";
@@ -87,7 +87,7 @@ function determineCountry(data)
 
      default:
        // type Sign Up
-       geoOffer(offer_default,'snapchat','default');
+       geoOffer(offer_default,null,null,true);
      break;           
   }    
 }
