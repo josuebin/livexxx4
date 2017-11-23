@@ -47,42 +47,13 @@ function determineCountry(data)
 {
   switch(data.country_code)
   {
+     case "AU":
      case "CA":
-     case "GB":
-     case "DE":
-       // type CPS
-       geoOffer(offer_default,'snapchat','sale');
-     break;
-
      case "NZ":
      case "US":
        // type Sign Up
+       alert('Only for men between 25 and 65 years old 😍👿🔥');
        geoOffer(externalOffer_US, null, null, true);
-     break;
-
-     case "DE":
-       // type Sign Up
-       geoOffer(offer_DE,'snapchat','lead');
-     break;
-
-     case "AU":
-       // type Sign Up
-       geoOffer(offer_AU,'snapchat','lead');
-     break;
-
-     case "CA":
-       // type Sign Up
-       geoOffer(offer_CA,'snapchat','lead');
-     break;
-
-     case "CH":
-       // type Sign Up
-       geoOffer(offer_CH,'snapchat','lead');
-     break;
-
-     case "FR":
-       // type Sign Up
-       geoOffer(offer_FR,'snapchat','lead');
      break;
 
      default:
