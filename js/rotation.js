@@ -29,7 +29,7 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "http://ck.glzelnk.com/30169";
+var offer_default = "http://damneddevastator.com/d/8736620902580715feb?sub={yourClickId}&source={yourSubPublisherId}";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
 var offer_DE = "15090";
 var offer_CH = "16269";
