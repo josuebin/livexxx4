@@ -1,14 +1,3 @@
-/*function loadScript( id, src, callback ) 
-{
-    var script = document.createElement("script");
-    script.setAttribute("type", "text/javascript");
-    script.setAttribute("src", src + "?callback=" + callback);
-    script.setAttribute("id", id);
-    document.getElementsByTagName("head")[0].appendChild(script);
-
-} loadScript('geoIp', 'https://freegeoip.net/json', 'determineCountry' );
-*/
-
 //-------------------------------------------------------------------------------------
 // Offer helper
 function geoOffer( offer, track1 = "track1", track2 = "track2", external = false )
