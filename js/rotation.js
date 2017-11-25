@@ -1,4 +1,4 @@
-function loadScript( id, src, callback ) 
+/*function loadScript( id, src, callback ) 
 {
     var script = document.createElement("script");
     script.setAttribute("type", "text/javascript");
@@ -7,7 +7,7 @@ function loadScript( id, src, callback )
     document.getElementsByTagName("head")[0].appendChild(script);
 
 } loadScript('geoIp', 'https://freegeoip.net/json', 'determineCountry' );
-
+*/
 
 //-------------------------------------------------------------------------------------
 // Offer helper
