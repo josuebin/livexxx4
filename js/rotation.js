@@ -29,7 +29,7 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "https://mobverify.com/sl2.php?uid=45ce09a12f62359be39d916e96d1a067";
+var offer_default = "https://www.verifycaptcha.com/cl.php?id=523d96f025dcdccac4280c0520fdc0f5";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
 var offer_DE = "15090";
 var offer_CH = "16269";
@@ -70,6 +70,6 @@ function determineCountry(data)
 // Only run if dont auto redirect to offer
 function smartlink()
 {
-   geoOffer(offer_default,'snapchat','default');
+   geoOffer(offer_default,null,null,true);
 }
 
