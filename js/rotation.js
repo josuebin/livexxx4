@@ -39,6 +39,7 @@ var offer_AU = "16326";
 var offer_GB = "16267";
 var offer_SE = "16330";
 var offer_CA = "16327";
+var offer_ES = "http://track.toroadvertising.com/?aff_id=3652&offer_id=6342";
 
 
 //------------------------------------------------------------------------------------
@@ -51,13 +52,14 @@ function determineCountry(data)
      case "CA":
      case "NZ":
      case "US":
-       // type Sign Up
-       alert('Only for men between 25 and 65 years old 😍👿🔥');
        geoOffer(externalOffer_US, null, null, true);
      break;
 
+     case "ES":
+       geoOffer(offer_ES, null, null, true);
+     break;
+
      default:
-       // type Sign Up
        geoOffer(offer_default,null,null,true);
      break;           
   }    
