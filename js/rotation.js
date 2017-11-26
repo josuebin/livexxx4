@@ -20,7 +20,7 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 //Sales
 var offer_Sales = "16340";
 //Leads
-var offer_default = "https://sx.leadzutw.com/?m=1GK9SITE68141X5&a=";
+var offer_default = "http://www.rotationurls.com/offer/29668|16267?data1=snpachat&data2=snapchat&tag={clickid}&website={subID}&placement={sub_subID}";
 var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww&skin=262&i=1";
 var externalOffer_US_mobile = "http://mobile.hookupcougars.com?ainfo=NTE1NzR8MzA4MXww&skin=41&i=1";
 var offer_DE = "15090";
