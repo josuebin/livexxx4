@@ -1,5 +1,7 @@
 //-------------------------------------------------------------------------------------
 // Offer helper
+var device = navigator.userAgent
+
 function geoOffer( offer, track1 = "track1", track2 = "track2", external = false )
 {
     if (external)
@@ -19,7 +21,8 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 var offer_Sales = "16340";
 //Leads
 var offer_default = "https://sx.leadzutw.com/?m=1GK9SITE68141X5&a=";
-var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww";
+var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww&skin=262&i=1";
+var externalOffer_US_mobile = "http://mobile.hookupcougars.com?ainfo=NTE1NzR8MzA4MXww&skin=41&i=1";
 var offer_DE = "15090";
 var offer_CH = "16269";
 var offer_FR = "16104";
@@ -41,7 +44,32 @@ function determineCountry(data)
      case "CA":
      case "NZ":
      case "US":
-       geoOffer(externalOffer_US, null, null, true);
+     	// DatingGold
+		if (device.match(/Iphone/i)|| 
+			device.match(/Ipod/i)|| 
+			device.match(/Android/i)|| 
+			device.match(/J2ME/i)|| 
+			device.match(/BlackBerry/i)|| 
+			device.match(/iPhone|iPad|iPod/i)|| 
+			device.match(/Opera Mini/i)|| 
+			device.match(/IEMobile/i)|| 
+			device.match(/Mobile/i)|| 
+			device.match(/Windows Phone/i)|| 
+			device.match(/windows mobile/i)|| 
+			device.match(/windows ce/i)|| 
+			device.match(/webOS/i)|| 
+			device.match(/palm/i)|| 
+			device.match(/bada/i)|| 
+			device.match(/series60/i)|| 
+			device.match(/nokia/i)|| 
+			device.match(/symbian/i)|| 
+			device.match(/HTC/i))
+		{
+			geoOffer(externalOffer_US_mobile, null, null, true);
+		}else
+		{
+       		geoOffer(externalOffer_US, null, null, true);
+		}
      break;
 
      case "ES":
