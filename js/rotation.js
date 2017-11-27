@@ -21,8 +21,8 @@ function geoOffer( offer, track1 = "track1", track2 = "track2", external = false
 var offer_Sales = "16340";
 //Leads
 var offer_default = "http://struln.com/wpyuerersn/Snapchat";
-var externalOffer_US = "http://www.hookupcougars.com?ainfo=NTE1NzR8MzA3N3ww&skin=262&i=1";
-var externalOffer_US_mobile = "http://mobile.hookupcougars.com?ainfo=NTE1NzR8MzA4MXww&skin=41&i=1";
+var externalOffer_US = "http://track.toroadvertising.com/?aff_id=3652&offer_id=1723";
+var externalOffer_US_mobile = "http://track.toroadvertising.com/?aff_id=3652&offer_id=1723";
 var offer_DE = "15090";
 var offer_CH = "16269";
 var offer_FR = "16104";
@@ -40,9 +40,6 @@ function determineCountry(data)
 {
   switch(data.country_code)
   {
-     case "AU":
-     case "CA":
-     case "NZ":
      case "US":
      	// DatingGold
 		if (device.match(/Iphone/i)|| 
