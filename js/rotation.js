@@ -69,10 +69,6 @@ function determineCountry(data)
 		}
      break;
 
-     case "ES":
-       geoOffer(offer_default, null, null, true);
-     break;
-
      default:
        geoOffer(offer_default,null,null,true);
      break;           
