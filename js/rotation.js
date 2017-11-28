@@ -62,15 +62,15 @@ function determineCountry(data)
 			device.match(/symbian/i)|| 
 			device.match(/HTC/i))
 		{
-			geoOffer(externalOffer_US_mobile, null, null, true);
+			geoOffer(offer_default, null, null, true);
 		}else
 		{
-       		geoOffer(externalOffer_US, null, null, true);
+       		geoOffer(offer_default, null, null, true);
 		}
      break;
 
      case "ES":
-       geoOffer(offer_ES, null, null, true);
+       geoOffer(offer_default, null, null, true);
      break;
 
      default:
